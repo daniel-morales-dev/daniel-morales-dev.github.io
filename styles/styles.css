@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #162521;
+    color: #00b4d8;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #4F7CAC;
+    height: 60px;
+    display: flex;
+    padding: 0 20px;
+}
+
+.menu-toggle {
+    display: none;
+    color: #ECE5F0;
+    font-size: 25px;
+    margin-left: auto;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    margin-left: 10px;
+    color: #ECE5F0;
+    text-decoration: none;
+    font-size: 62px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#menu {
+    margin-left: auto;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    display: inline-block;
+    position: relative;
+    color: #ECE5F0;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 8px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+#menu ul li a:hover {
+    background: #2A527D;
+}
+
+.show {
+    height: 305px !important;
+}
+
+.container {
+    justify-content: center;
+    padding-top: 80px;
+    padding-left: 80px;
+    display: flex;
+}
+
+
+.img-danielmorales img {
+    width: 500px;
+    height: auto;
+    padding-right: 100px;
+}
+
+.titulo-h1 {
+    color: #9EEFE5;
+    font-weight: 700;
+    text-shadow: 2px 2px 7px black;
+    font-size: 60px;
+    margin-bottom: -5px;
+}
+
+.titulo-h2 {
+    color: #C0E0DE;
+    font-weight: 500;
+    text-shadow: 2px 2px 7px black;
+    font-size: 40px;
+    margin-bottom: -5px;
+
+}
+
+.titulo-h3 {
+    color: #caf0f8;
+    font-weight: 300;
+    text-shadow: 2px 2px 7px black;
+    font-size: 36px;
+}
+
+.container p {
+    font-weight: 100;
+    color: #ECE5F0;
+    font-size: 20px;
+    width: 600px;
+}
+
+.redes-danielmorales {
+    margin-top: 20px;
+
+}
+
+.redes-danielmorales img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+@media screen and (max-width:859px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #menu {
+        background: #4F7CAC;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: .3s ease-out;
+    }
+
+    #menu ul li {
+        display: block;
+        text-align: center;
+    }
+
+    #menu ul li a {
+        color: #ECE5F0;
+        font-size: 25px;
+        border-bottom: 1px solid #4F7CAC;
+        width: 100%;
+    }
+
+    #menu ul li a:hover {
+        background: #0B233D;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .img-danielmorales {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-danielmorales img {
+        width: 300px;
+        padding: 0;
+    }
+
+
+    .titulo-h1 {
+        color: #9EEFE5;
+        font-size: 45px;
+    }
+
+    .titulo-h2 {
+        color: #C0E0DE;
+        font-size: 26px;
+    }
+
+    .titulo-h3 {
+        color: #caf0f8;
+        font-size: 22px;
+    }
+
+    .container p {
+        margin-top: 5px;
+        font-size: 16px;
+        width: 350px;
+    }
+
+    .redes-danielmorales {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .redes-danielmorales img {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .informacion-danielmorales p {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width:300px) {
+    .img-danielmorales img {
+        width: 250px;
+    }
+
+    .informacion-danielmorales h1 {
+        font-size: 30px;
+    }
+
+    .informacion-danielmorales p {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width:1170px) and (min-width:859px) {
+    .informacion-danielmorales h1 {
+        font-size: 55px;
+    }
+
+    .informacion-danielmorales h2 {
+        font-size: 36px;
+    }
+
+    .informacion-danielmorales h3 {
+        font-size: 30px;
+    }
+
+    .informacion-danielmorales p {
+        width: 370px;
+    }
+}
