@@ -1,3 +1,8 @@
+@import "./services.css";
+@import "./curriculum.css";
+@import "./skills.css";
+@import "./portfolio.css";
+
 * {
   padding: 0;
   margin: 0;
@@ -114,6 +119,7 @@ header {
 .container p {
   width: 600px;
 }
+
 p {
   font-weight: 100;
   color: #ece5f0;
@@ -129,115 +135,35 @@ p {
   margin-right: 50px;
 }
 
-/* CURRICULUM VITAE */
-.body-curriculum {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.body-curriculum img {
-  margin-top: 20px;
-  width: 20em;
-}
-
-.body-curriculum h3 {
-  margin-top: 15px;
-  font-size: 1.4em;
-}
-
-/* SERVICES */
-.container-services {
-  padding-top: 80px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.container-services h1 {
-  display: flex;
-  justify-content: center;
-}
-
-.container-services .wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.container-services .card {
-  width: 25em;
-  height: 30em;
-  background: #4f7cac;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  box-shadow: 10px 10px 5px 0px rgba(4, 6, 36, 0.63);
-  transition: 0.2s;
-  border-radius: 35px 0px 35px 0px;
-  cursor: pointer;
-  margin-right: 40px;
-  margin: 20px;
-}
-
-.card-image {
-  display: flex;
-  justify-content: center;
-}
-
-.card-image img {
-  width: 8em;
-  flex-shrink: 2;
-}
-
-.card h2 {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  text-shadow: none;
-}
-
-.card p {
-  font-size: 1.2em;
-  padding-top: 10px;
-  font-weight: 300;
-}
-
-.card-footer {
-  display: flex;
-  padding-top: 30px;
-  justify-content: center;
-}
-
-.card-footer a {
-  color: #ece5f0;
-  text-decoration: none;
-  font-size: 1.5em;
-  background: #0b233d;
-  padding: 8px;
-  border-radius: 10px;
-  transition: 0.2s;
-}
-
-.card-footer a:hover {
-  background: #011124;
-  box-shadow: 5px 5px #031224;
-}
-
 /* RESPONSIVE */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .container {
     padding-top: 50px;
   }
+
   .container-services {
     padding-top: 50px;
   }
+
+  .container-skills {
+    padding-top: 50px;
+  }
+
+  .container-skills .skill {
+    width: 20em;
+  }
+
+  .container-skills .skill img {
+
+    width: 5em;
+  }
+
   .container-services .card {
     width: 25em;
     height: 25em;
   }
 }
+
 @media screen and (max-width: 859px) {
   .menu-toggle {
     display: block;
@@ -326,6 +252,18 @@ p {
 
   .container-services .card {
     width: 20em;
+  }
+
+}
+
+@media screen and (max-width: 1366px) {
+  .container-portfolio .project {
+    width: 25em;
+  }
+
+  .container-portfolio .project img {
+    width: 18em;
+
   }
 }
 

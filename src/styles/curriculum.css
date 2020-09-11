@@ -1,0 +1,16 @@
+/* CURRICULUM VITAE */
+.body-curriculum {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.body-curriculum img {
+    margin-top: 20px;
+    width: 20em;
+}
+
+.body-curriculum h3 {
+    margin-top: 15px;
+    font-size: 1.4em;
+}

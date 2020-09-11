@@ -1,7 +1,7 @@
-import viewServices from '../views/notfound.html';
+import viewPortfolio from '../views/portfolio.html';
 
 export default () => {
   const divElement = document.createElement('div');
-  divElement.innerHTML = viewServices;
+  divElement.innerHTML = viewPortfolio;
   return divElement;
 };

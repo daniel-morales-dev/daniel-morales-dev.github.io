@@ -12,13 +12,13 @@ const router = (nameRoute) => {
     case '#/services':
       return content.appendChild(pages.Services());
     case '#/skills':
-      return console.log('skills');
+      return content.appendChild(pages.Skills());
     case '#/portfolio':
-      return console.log('portfolio');
+      return content.appendChild(pages.Portfolio());
     case '#/contact':
       return console.log('contact');
     default:
-      return console.log('404');
+      return content.appendChild(pages.NotFound());
   }
 };
 
