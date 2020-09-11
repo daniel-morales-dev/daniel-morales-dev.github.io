@@ -1,7 +1,5 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
-const CopyPlugin = require('copy-webpack-plugin');
-const Assets = require('./src/scripts/assets.js');
+
 module.exports = {
   entry: './src/scripts/main.js',
   output: {

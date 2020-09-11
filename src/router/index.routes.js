@@ -1,5 +1,5 @@
 import { pages } from '../controllers/index';
-let content = document.getElementById('root');
+let content = document.querySelector('.container-root');
 
 const router = (nameRoute) => {
   content.innerHTML = '';
