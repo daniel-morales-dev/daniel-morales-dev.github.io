@@ -1,12 +1,15 @@
 {
+  "homepage": "https://se1juro.github.io/portafolio",
   "name": "part1",
   "version": "1.0.0",
   "description": "",
   "main": "src/scripts/main.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "animate.css": "^4.1.1",
     "css-loader": "^4.3.0",
-    "deploy": "gh-pages -d dist",
     "gh-pages-deploy": "^0.5.1",
     "html-webpack-plugin": "^4.4.1",
     "style-loader": "^1.2.1",
@@ -19,9 +22,6 @@
     "file-loader": "^6.1.0",
     "html-loader": "^1.3.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Se1juro/se1juro.github.io.git"
@@ -31,6 +31,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Se1juro/se1juro.github.io/issues"
-  },
-  "homepage": "https://github.com/Se1juro/se1juro.github.io#readme"
+  }
 }
