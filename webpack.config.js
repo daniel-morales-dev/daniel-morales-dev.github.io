@@ -1,5 +1,5 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 module.exports = {
   entry: './src/scripts/main.js',
   output: {
@@ -23,8 +23,21 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'img/',
-              publicPath: 'img/',
+              outputPath: 'assets/img/',
+              publicPath: 'assets/img/',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.pdf$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              publicPath: 'assets/docs/',
+              outputPath: 'assets/docs/',
             },
           },
         ],
@@ -35,5 +48,6 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: './src/index.html',
     }),
+    new FaviconsWebpackPlugin('./src/assets/img/developer.svg'), // svg works too!
   ],
 };
