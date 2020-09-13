@@ -40,6 +40,7 @@
 
 .card-image img {
     width: 8em;
+    flex-shrink: 2;
 }
 
 .card h2 {
@@ -374,7 +375,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 0px;
   }
 
   .img-danielmorales {
@@ -418,16 +420,23 @@ p {
     width: 90px;
   }
 
-
+  .container-services {
+    padding-top: 50px;
+  }
 
   .container-services .card {
     width: 20em;
     margin-right: 0;
     justify-content: normal;
+    height: 30vh;
   }
 
   .container-services .wrapper {
     margin-bottom: 20px;
+  }
+
+  .container-skills {
+    padding-top: 50px
   }
 
 }
