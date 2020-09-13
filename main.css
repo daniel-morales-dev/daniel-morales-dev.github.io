@@ -24,6 +24,7 @@
     align-items: center;
     margin-right: 40px;
     justify-content: space-between;
+    flex-shrink: 2;
     margin-top: 40px;
     background: #4f7cac;
     padding: 20px;
@@ -375,7 +376,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-left: 0px;
   }
 
