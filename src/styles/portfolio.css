@@ -5,12 +5,12 @@
     flex-direction: column;
 }
 
-.wrapper {
+.container-portfolio .wrapper {
     display: flex;
     flex-wrap: wrap;
 }
 
-.wrapper .project {
+.container-portfolio .wrapper .project {
     margin-top: 20px;
     display: flex;
     flex-direction: column;

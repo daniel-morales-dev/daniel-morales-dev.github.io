@@ -23,7 +23,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 10px 10px 5px 0px rgba(4, 6, 36, 0.63);
     transition: 0.2s;
     border-radius: 35px 0px 35px 0px;

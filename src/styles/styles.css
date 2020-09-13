@@ -245,13 +245,15 @@ p {
     width: 90px;
   }
 
-  .container-services .wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
+
 
   .container-services .card {
     width: 20em;
+    margin-right: 0;
+  }
+
+  .container-services .wrapper {
+    margin-bottom: 20px;
   }
 
 }
