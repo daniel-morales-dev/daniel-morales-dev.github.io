@@ -250,6 +250,7 @@ p {
   .container-services .card {
     width: 20em;
     margin-right: 0;
+    justify-content: normal;
   }
 
   .container-services .wrapper {
