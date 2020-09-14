@@ -1,11 +1,18 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 module.exports = {
   entry: './src/scripts/main.js',
   output: {
     path: __dirname + '/dist/',
     filename: 'bundle.js',
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 3000,
+    host: '192.168.0.11',
   },
   module: {
     rules: [

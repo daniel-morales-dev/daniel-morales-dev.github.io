@@ -5,6 +5,7 @@
   "description": "",
   "main": "src/scripts/main.js",
   "scripts": {
+    "build": "npx webpack -d",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
