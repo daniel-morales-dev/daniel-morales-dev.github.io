@@ -1,7 +1,9 @@
-@import "./services.css";
-@import "./curriculum.css";
-@import "./skills.css";
-@import "./portfolio.css";
+@import './services.css';
+@import './curriculum.css';
+@import './skills.css';
+@import './portfolio.css';
+@import './notfound.css';
+@import './contact.css';
 
 * {
   padding: 0;
@@ -154,7 +156,6 @@ p {
   }
 
   .container-skills .skill img {
-
     width: 5em;
   }
 
@@ -162,8 +163,6 @@ p {
     width: 25em;
     height: 25em;
   }
-
-
 }
 
 @media screen and (max-width: 859px) {
@@ -260,10 +259,11 @@ p {
     justify-content: normal !important;
     width: 20em !important;
     flex-shrink: 2 !important;
+    height: 420px !important;
   }
 
   .container-skills {
-    padding-top: 50px
+    padding-top: 50px;
   }
 
   .container-portfolio .project {
@@ -273,8 +273,19 @@ p {
   .container-portfolio img {
     width: 15em !important;
   }
-}
 
+  .container-404 img {
+    width: 20em;
+  }
+
+  .container-contact .contact-info p {
+    font-size: 25px;
+  }
+
+  .project-capa p {
+    font-size: 100px;
+  }
+}
 
 @media screen and (max-width: 350px) {
   .informacion-danielmorales p {
@@ -316,5 +327,4 @@ p {
   .informacion-danielmorales p {
     width: 370px;
   }
-
 }

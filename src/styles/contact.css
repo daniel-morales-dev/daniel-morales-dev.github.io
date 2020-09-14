@@ -1,0 +1,20 @@
+.container-contact {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info a {
+    padding: 10px;
+    text-decoration: none;
+    color: #ece5f0;
+}
+
+.contact-info p {
+    font-size: 30px;
+    margin-top: 20px;
+}

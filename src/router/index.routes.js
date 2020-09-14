@@ -16,7 +16,7 @@ const router = (nameRoute) => {
     case '#/portfolio':
       return content.appendChild(pages.Portfolio());
     case '#/contact':
-      return console.log('contact');
+      return content.appendChild(pages.Contact());
     default:
       return content.appendChild(pages.NotFound());
   }

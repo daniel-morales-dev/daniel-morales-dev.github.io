@@ -4,6 +4,7 @@ import NotFound from './404Controller';
 import Services from './ServicesController';
 import Skills from './SkillsController';
 import Portfolio from './PortfolioController';
+import Contact from './ContactController';
 const pages = {
   Home,
   Curriculum,
@@ -11,6 +12,7 @@ const pages = {
   Services,
   Skills,
   Portfolio,
+  Contact,
 };
 
 export { pages };

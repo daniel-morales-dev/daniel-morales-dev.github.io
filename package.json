@@ -6,7 +6,8 @@
   "main": "src/scripts/main.js",
   "scripts": {
     "build": "npx webpack -d",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "dev": "npx webpack-dev-server"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
