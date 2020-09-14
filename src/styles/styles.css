@@ -250,21 +250,25 @@ p {
     padding-top: 50px;
   }
 
-  .container-services .card {
-    width: 20em;
-    margin-right: 0;
-    justify-content: normal;
+  .container-services .wrapper {
+    margin-bottom: 20px !important;
   }
 
-  .container-services .wrapper {
-    margin-bottom: 20px;
+  .container-services .card {
+    justify-content: normal !important;
+    width: 20em !important;
+    flex-shrink: 2 !important;
   }
 
   .container-skills {
     padding-top: 50px
   }
 
+  .container-portfolio .project {
+    width: 20em !important;
+  }
 }
+
 
 @media screen and (max-width: 1366px) {
   .container-portfolio .project {

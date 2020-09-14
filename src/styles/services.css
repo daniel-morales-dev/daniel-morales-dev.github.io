@@ -1,27 +1,25 @@
 /* SERVICES */
 .container-services {
-    padding-top: 80px;
+    padding-top: 50px;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
-}
-
-.container-services h1 {
-    display: flex;
-    justify-content: center;
 }
 
 .container-services .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
-.container-services .card {
+.container-services .wrapper .card {
+    width: 30em;
     margin-right: 40px;
     flex-shrink: 2;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
     background: #4f7cac;
     padding: 20px;
     box-shadow: 10px 10px 5px 0px rgba(4, 6, 36, 0.63);
