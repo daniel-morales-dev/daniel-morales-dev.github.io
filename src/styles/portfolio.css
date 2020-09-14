@@ -1,20 +1,20 @@
 .container-portfolio {
     padding-top: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
 }
 
 .container-portfolio .wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .container-portfolio .wrapper .project {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    width: 50em;
+    width: 40em;
     background: #4F7CAC;
     padding: 10px 20px;
     border-top: 10px solid #081e35;
@@ -28,7 +28,7 @@
 }
 
 .project-info img {
-    width: 45em;
+    width: 30em;
 }
 
 .project-info h2 {

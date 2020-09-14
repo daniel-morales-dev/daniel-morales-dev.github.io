@@ -136,7 +136,7 @@ p {
 }
 
 /* RESPONSIVE */
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     padding-top: 50px;
   }
@@ -162,6 +162,8 @@ p {
     width: 25em;
     height: 25em;
   }
+
+
 }
 
 @media screen and (max-width: 859px) {
@@ -267,19 +269,12 @@ p {
   .container-portfolio .project {
     width: 20em !important;
   }
-}
 
-
-@media screen and (max-width: 1366px) {
-  .container-portfolio .project {
-    width: 25em;
-  }
-
-  .container-portfolio .project img {
-    width: 18em;
-
+  .container-portfolio img {
+    width: 15em !important;
   }
 }
+
 
 @media screen and (max-width: 350px) {
   .informacion-danielmorales p {
@@ -321,4 +316,5 @@ p {
   .informacion-danielmorales p {
     width: 370px;
   }
+
 }
