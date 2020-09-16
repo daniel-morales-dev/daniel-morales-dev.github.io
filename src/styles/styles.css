@@ -256,10 +256,9 @@ p {
   }
 
   .container-services .card {
-    justify-content: normal !important;
     width: 20em !important;
     flex-shrink: 2 !important;
-    height: 420px !important;
+    height: 440px !important;
   }
 
   .container-skills {

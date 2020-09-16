@@ -1,10 +1,10 @@
 /* SERVICES */
+
 .container-services {
     padding-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 
 .container-services .wrapper {
@@ -28,9 +28,8 @@
     cursor: pointer;
 }
 
-.card-image {
-    display: flex;
-    justify-content: center;
+.card-info .card-image {
+    text-align: center;
 }
 
 .card-image img {
