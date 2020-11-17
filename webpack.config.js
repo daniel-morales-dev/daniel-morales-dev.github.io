@@ -1,38 +1,38 @@
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
+const HTMLWebpackPlugin = require("html-webpack-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
 module.exports = {
-  entry: './src/scripts/main.js',
+  entry: "./src/scripts/main.js",
   output: {
-    path: __dirname + '/dist/',
-    filename: 'bundle.js',
+    path: __dirname + "/dist/",
+    filename: "bundle.js",
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 3000,
-    host: '192.168.0.11',
+    host: "192.168.1.52",
   },
   module: {
     rules: [
       {
         test: /.css$/i,
-        loader: [MiniCSSExtractPlugin.loader, 'css-loader'],
+        loader: [MiniCSSExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.html$/,
-        use: ['html-loader'],
+        use: ["html-loader"],
       },
       {
         test: /\.(jpg|png|svg|jpeg)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/img/',
-              publicPath: 'assets/img/',
+              name: "[name].[ext]",
+              outputPath: "assets/img/",
+              publicPath: "assets/img/",
             },
           },
         ],
@@ -41,11 +41,11 @@ module.exports = {
         test: /\.pdf$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              publicPath: 'assets/docs/',
-              outputPath: 'assets/docs/',
+              name: "[name].[ext]",
+              publicPath: "assets/docs/",
+              outputPath: "assets/docs/",
             },
           },
         ],
@@ -54,9 +54,9 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: './src/index.html',
+      template: "./src/index.html",
     }),
-    new FaviconsWebpackPlugin('./src/assets/img/developer.svg'), // svg works too!
+    new FaviconsWebpackPlugin("./src/assets/img/developer.svg"), // svg works too!
     new MiniCSSExtractPlugin(),
   ],
 };

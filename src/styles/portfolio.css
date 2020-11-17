@@ -1,87 +1,92 @@
 .container-portfolio {
-    padding-top: 50px;
-    text-align: center;
+  padding-top: 50px;
+  text-align: center;
 }
 
 .container-portfolio .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 20px;
-    flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
 }
 
 .container-portfolio .wrapper .project {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 40em;
-    background: #4F7CAC;
-    padding: 10px 20px;
-    border-top: 10px solid #081e35;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-    transition: all 500ms ease-out;
-    overflow: hidden;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 36em;
+  background: #4f7cac;
+  padding: 10px 20px;
+  border-top: 10px solid #081e35;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all 500ms ease-out;
+  overflow: hidden;
+  min-height: 300px;
+  height: 470px;
+  justify-content: space-evenly;
+  max-height: 470px;
 }
 
 .project-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .project-info img {
-    width: 30em;
+  width: 20em;
 }
 
 .project-info h2 {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .project-info p {
-    font-size: 18px;
-    text-align: center;
+  font-size: 18px;
+  text-align: center;
 }
 
 .project-footer {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .project-footer p {
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .project-capa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(32, 95, 116, 0.795);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 95, 116, 0.795);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-capa p {
-    font-size: 200px;
+  font-size: 200px;
 }
 
 .project-capa a {
-    text-decoration: none;
-    color: #ece5f0;
+  text-decoration: none;
+  color: #ece5f0;
 }
 
-.project:hover>.project-capa {
-    opacity: 1;
-    visibility: visible;
+.project:hover > .project-capa {
+  opacity: 1;
+  visibility: visible;
 }
