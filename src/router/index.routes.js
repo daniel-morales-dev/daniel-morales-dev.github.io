@@ -9,8 +9,6 @@ const router = (nameRoute) => {
     }
     case '#/curriculum':
       return content.appendChild(pages.Curriculum());
-    case '#/services':
-      return content.appendChild(pages.Services());
     case '#/skills':
       return content.appendChild(pages.Skills());
     case '#/portfolio':
