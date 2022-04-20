@@ -24,9 +24,22 @@
     justify-content: space-around;
     margin-right: 20px;
     margin-top: 20px;
+    width: 20em;
+    height: 20em;
+}
+.skill .info{
+    height: 15em;
+    display: flex;
+    align-items: center;
 }
 
 .skill img {
-    width: 10em;
+    width: 15em;
     flex-shrink: 2;
+}
+
+@media screen and (max-width: 859px) {
+    .skill img{
+        width: 10em !important;
+    }
 }
