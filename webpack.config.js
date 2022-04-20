@@ -12,7 +12,7 @@ module.exports = {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 3000,
-    host: "192.168.0.12",
+    host: "localhost",
   },
   module: {
     rules: [
