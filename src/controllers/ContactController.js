@@ -1,7 +1,7 @@
-import viewContact from '../views/contact.html';
+import viewContact from "../views/contact.html";
 
 export default () => {
-  const divElement = document.createElement('div');
+  const divElement = document.createElement("div");
   divElement.innerHTML = viewContact;
   return divElement;
 };

@@ -1,19 +1,19 @@
-import { pages } from '../controllers/index';
-let content = document.querySelector('.container-root');
+import { pages } from "../controllers/index";
+let content = document.querySelector(".container-root");
 
 const router = (nameRoute) => {
-  content.innerHTML = '';
+  content.innerHTML = "";
   switch (nameRoute) {
-    case '': {
+    case "": {
       return content.appendChild(pages.Home());
     }
-    case '#/curriculum':
+    case "#/curriculum":
       return content.appendChild(pages.Curriculum());
-    case '#/skills':
+    case "#/skills":
       return content.appendChild(pages.Skills());
-    case '#/portfolio':
+    case "#/portfolio":
       return content.appendChild(pages.Portfolio());
-    case '#/contact':
+    case "#/contact":
       return content.appendChild(pages.Contact());
     default:
       return content.appendChild(pages.NotFound());

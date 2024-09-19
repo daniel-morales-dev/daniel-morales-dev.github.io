@@ -1,7 +1,7 @@
-import viewPortfolio from '../views/portfolio.html';
+import viewPortfolio from "../views/portfolio.html";
 
 export default () => {
-  const divElement = document.createElement('div');
+  const divElement = document.createElement("div");
   divElement.innerHTML = viewPortfolio;
   return divElement;
 };
